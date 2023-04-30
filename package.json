@@ -1,0 +1,67 @@
+{
+  "name": "porter-stemming",
+  "version": "1.0.0",
+  "private": true,
+  "description": "TypeScript implementation of the Porter Stemmer algorithm",
+  "license": "MIT",
+  "keywords": [
+    "martin",
+    "porter",
+    "stemmer",
+    "algorithm",
+    "cli",
+    "bin"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maxxxxxdlp/porter-stemming.git"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/index.d.ts",
+    "dist/index.js"
+  ],
+  "author": "Max Patiiuk <max@patii.uk> (https://max.patii.uk)",
+  "homepage": "https://github.com/maxxxxxdlp/porter-stemming#readme",
+  "bugs": {
+    "url": "https://github.com/maxxxxxdlp/porter-stemming/issues"
+  },
+  "scripts": {
+    "test": "npm run build && npm run unitTests",
+    "prepublishOnly": "npm run build && npm run unitTests",
+    "build": "tsc",
+    "unitTests": "jest",
+    "unitTests:coverage": "jest --coverage",
+    "unitTests:watch": "jest --watch"
+  },
+  "devDependencies": {
+    "@maxxxxxdlp/eslint-config": "^5.0.0",
+    "@maxxxxxdlp/prettier-config": "^1.0.4",
+    "@types/jest": "^29.5.1",
+    "eslint": "^8.39.0",
+    "jest": "^29.5.0",
+    "prettier": "^2.8.8",
+    "ts-jest": "^29.1.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4",
+    "globals": "^13.20.0"
+  },
+  "browserslist": {
+    "production": [
+      "last 2 years",
+      "> 1% in US",
+      "not ie <= 11",
+      "not dead"
+    ],
+    "development": [
+      "last 2 Chrome versions",
+      "last 2 Firefox versions",
+      "last 1 Safari version"
+    ]
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "prettier": "@maxxxxxdlp/prettier-config"
+}

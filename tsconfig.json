@@ -1,0 +1,46 @@
+{
+  /* File Inclusion */
+  "include": ["src"],
+  "exclude": ["node_modules","dist"],
+  "compilerOptions": {
+    /* Basic Options */
+    "isolatedModules": true,
+    "lib": [
+      "es6",
+      "es2015",
+      "es2016",
+      "es2017",
+      "es2018",
+      "es2019",
+      "es2020",
+      "es2021",
+      "esnext"
+    ],
+    "module": "CommonJS",
+    "sourceMap": true,
+    "target": "es2021",
+    "outDir": "dist",
+    /**/
+    /* Strict Checks */
+    "strict": true,
+    /**/
+    /* Module Resolution */
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    /**/
+    /* Linter Checks */
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    /**/
+    /* Advanced */
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+  },
+  "typedocOptions" : {
+    "entryPoints" : ["src"],
+    "out": "docs"
+  }
+}
