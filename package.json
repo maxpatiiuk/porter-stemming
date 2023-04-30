@@ -13,7 +13,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/maxxxxxdlp/porter-stemming.git"
+    "url": "https://github.com/maxpatiiuk/porter-stemming.git"
   },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -22,9 +22,9 @@
     "dist/index.js"
   ],
   "author": "Max Patiiuk <max@patii.uk> (https://max.patii.uk)",
-  "homepage": "https://github.com/maxxxxxdlp/porter-stemming#readme",
+  "homepage": "https://github.com/maxpatiiuk/porter-stemming#readme",
   "bugs": {
-    "url": "https://github.com/maxxxxxdlp/porter-stemming/issues"
+    "url": "https://github.com/maxpatiiuk/porter-stemming/issues"
   },
   "scripts": {
     "test": "npm run build && npm run unitTests",
