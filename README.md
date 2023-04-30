@@ -13,7 +13,7 @@ it easier to identify related words and analyze texts more effectively.
 To install the package, run the following command:
 
 ```bash
-npm install porter-stemming
+npm install porterstem
 ```
 
 ## Usage
@@ -23,7 +23,7 @@ simply import the stem function from the package and apply it to a word or an
 array of words:
 
 ```typescript
-import { stem } from 'porter-stemming';
+import { stem } from 'porterstem';
 
 // Single word
 const word = 'running';

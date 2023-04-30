@@ -1,5 +1,5 @@
 {
-  "name": "porter-stemming",
+  "name": "porterstem",
   "version": "1.0.0",
   "description": "TypeScript implementation of the Porter Stemmer algorithm",
   "license": "MIT",
