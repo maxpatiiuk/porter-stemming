@@ -1,6 +1,6 @@
 {
   "name": "porterstem",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "TypeScript implementation of the Porter Stemmer algorithm",
   "license": "MIT",
   "keywords": [
