@@ -1,47 +1,48 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig.json",
   /* File Inclusion */
   "include": ["src"],
-  "exclude": ["node_modules","dist"],
   "compilerOptions": {
-    /* Basic Options */
-    "isolatedModules": true,
-    "lib": [
-      "es6",
-      "es2015",
-      "es2016",
-      "es2017",
-      "es2018",
-      "es2019",
-      "es2020",
-      "es2021",
-      "esnext"
-    ],
-    "module": "CommonJS",
-    "sourceMap": true,
-    "declaration": true,
-    "target": "es2021",
-    "outDir": "dist",
-    /**/
-    /* Strict Checks */
-    "strict": true,
-    /**/
-    /* Module Resolution */
-    "esModuleInterop": true,
-    "moduleResolution": "node",
-    /**/
-    /* Linter Checks */
-    "noFallthroughCasesInSwitch": true,
+    /* Type Checking */
+    "allowUnreachableCode": false,
+    "noImplicitOverride": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    /**/
-    /* Advanced */
-    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+
+    /* Modules */
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
     "resolveJsonModule": true,
-    "skipLibCheck": true,
+
+    /* Emit */
+    "declaration": true,
+    "newLine": "lf",
+    "noEmitHelpers": true,
+    "noEmitOnError": true,
+    "outDir": "./dist",
+    "baseUrl": ".",
+    "sourceMap": true,
+
+    /* JavaScript Support */
+    "allowJs": false,
+
+    /* Interop Constraints */
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+
+    /* Language and Environment */
+    "experimentalDecorators": true,
+    "jsx": "react",
+    "jsxFactory": "h",
+    "jsxFragmentFactory": "Fragment",
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "target": "es2022",
+
+    /* Completeness */
+    "skipLibCheck": true
   },
-  "typedocOptions" : {
-    "entryPoints" : ["src"],
-    "out": "docs"
-  }
+  "noPropertyAccessFromIndexSignature": true
 }

@@ -1,4 +1,6 @@
-import { stem } from '../index';
+/// <reference types="vitest" />
+import { test, expect } from 'vitest';
+import { stem } from '../index.js';
 import stemmerTest from './fixtures.json';
 
 /**
